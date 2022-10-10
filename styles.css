@@ -199,6 +199,14 @@
   }
 }
 
+.head {
+  text-align: center;
+}
+
+.text {
+  color: #f77062;
+}
+
 /* Products */
 .products {
   display: flex;
