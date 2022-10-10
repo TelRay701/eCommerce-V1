@@ -7,15 +7,16 @@ menu.addEventListener("click", function () {
   menuLinks.classList.toggle("active");
 });
 
-let http = new XMLHttpRequest();
+// Script for grabbing materials from the JSON File
+let http = new XMLHttpRequest(); //Interacts with the JSON File
 
 http.open("get", "product.json", true);
 http.send();
 http.onload = function () {
   if (this.readyState == 4 && this.status == 200) {
-    let product = JSON.parse(this.responseText);
+    let product = JSON.parse(this.responseText); //return text from JSON file
 
-    let output = "";
+    let output = ""; // empty array for output of JSON File
 
     for (let item of product) {
       output += `
