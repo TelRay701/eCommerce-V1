@@ -52,35 +52,35 @@
         <p>Connect with us by dropping any questions or comments</p>
       </div>
 
-      <div class="form">
+      <form action="/action_page.php" class="form">
         <div class="top-form">
           <div class="inner-form">
-            <div class="label">Name</div>
+            <label for="name">Name</label>
             <input type="text" placeholder="Ex. John Doe" required />
           </div>
           <div class="inner-form">
-            <div class="label">Email</div>
+            <label for="email">Email</label>
             <input type="text" placeholder="Example@gmail.com" required />
           </div>
           <div class="inner-form">
-            <div class="label">Phone</div>
-            <input type="text" placeholder="1234567890" required />
+            <label for="tel">Phone</label>
+            <input type="tel" placeholder="1234567890" required />
           </div>
         </div>
         <div class="middle-form">
           <div class="inner-form">
-            <div class="label">Subject</div>
+            <label for="subject">Subject</label>
             <input type="text" placeholder="Subject" required />
           </div>
         </div>
         <div class="bottom-form">
           <div class="inner-form">
-            <div class="label">Comments, Questions, or Concerns</div>
+            <label for="comments">Comments, Questions, or Concerns</label>
             <textarea placeholder="Type here" required></textarea>
           </div>
         </div>
-        <div class="btn">Send!</div>
-      </div>
+        <input type="submit" value="Send!" class="btn" />
+      </form>
     </div>
 
     <!-- Footer Section -->
