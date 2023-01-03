@@ -20,13 +20,11 @@ http.onload = function () {
 
     for (let item of product) {
       output += `
-      <div class products>
-      <img class="img" src="${item.image}"
+      <div class=products>
+      <img class="img" src="${item.image}"/>
       <p class="device">${item.device}</p>
       <p class="description">${item.description}</p>
-      <p class="price">
-      <span>${item.price}</span>
-      </p>
+      <p class="price">${item.price}</p>
       </div>`;
     }
     document.querySelector(".title").innerHTML = `

@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
@@ -207,41 +206,41 @@
   color: #f77062;
 }
 
-/* Products */
-.products {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
-.img {
-  max-width: 85%;
-  height: auto;
-}
-
+/* Products-Page */
 .site-title {
   text-align: center;
   font-weight: normal;
   font-size: 2rem;
 }
-
-.device {
-  font-size: 1rem;
-  font-weight: normal;
-  margin: 0 0 1rem 0;
+.prod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.description {
-  position: relative;
-  left: 17px;
-  font-size: 0.85rem;
+.products {
+  text-align: center;
+  border: solid 3px #f77062;
+  width: 550px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.img {
+  width: 55%;
+  height: auto;
+}
+
+.device {
+  font-weight: bold;
+  margin: 20px;
 }
 
 .price {
-  font-size: 1rem;
+  margin-top: 15px;
 }
 
-/* PRODUCTS */
+/* PRODUCTS-HOME */
 .product {
   position: relative;
   overflow: hidden;
@@ -524,7 +523,6 @@
   width: 100%;
   min-height: 65px;
   margin: 10px 0;
-  overflow: hidden;
 }
 
 .form input[type="text"],
@@ -551,9 +549,10 @@
 
 /* top-form */
 .top-form .inner-form {
-  width: 29.9%;
+  margin-right: 15px;
+  width: 30%;
   float: left;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 }
 
 .top-form .inner-form:last-child {
